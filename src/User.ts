@@ -13,6 +13,14 @@ export class User {
             lat: parseFloat(faker.address.latitude()),
             lng: parseFloat(faker.address.longitude())
         }
+
+    }
+    addMarkerContent(): string {
+        return `
+            <div>
+                <h1>${this.name}</h1>
+            </div>
+        `
     }
 
 }
